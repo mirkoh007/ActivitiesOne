@@ -1,0 +1,30 @@
+<div ng-controller="deleteController">
+	<div class="container">
+	
+		<div class="jumbotron">
+			<h1 class="text-center font-effect-fire-animation">DELETE AN ACTIVITY</h1>
+			<hr class="my-4">
+			<p class="lead text-center font-effect-3d" id="delAct1">Choose carefully, choose wisely!</p>
+		
+		</div>
+		
+		<table class="table table-striped">
+			  
+			    <tr ng-repeat="activity in activities">
+			      <td>{{activity.name}}</td>
+			      <td> <button type="button" class="btn btn-danger" ng-click="deleteActivity(activity.id)"><i class="fas fa-trash-alt"></i></button></td>
+			      
+			    </tr>
+			    
+			  
+		</table>
+		
+		<a type="button" href="#!/" role="button" class="btn btn-success my-3"><i class="fas fa-arrow-left"></i>  Back to safety!</a>
+	
+	
+	
+	</div>  <!-- container -->
+
+
+
+</div> <!-- ng controller -->

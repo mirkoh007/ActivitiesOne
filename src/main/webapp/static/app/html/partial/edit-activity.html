@@ -1,0 +1,30 @@
+<div ng-controller="editActivityCtrl">
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 id="editing" class="text-center">You are about to change a name for an activity</h1>
+		</div>
+			
+     
+		<!--  <p class="mt-3">Enter new name: <input type="text"  ng-model = "activity.name" placeholder="new name"/> 
+		<button type = "button" class="btn btn-success" ng-click = "edit()">Izmeni</button>
+		</p>
+		<div>
+			<a type="button" class="btn btn-info" href="#!/">Back</a>
+		</div>-->
+		
+		<form class="form-inline" name="editActivityForm" ng-submit="edit()">
+			<div class="form-group">
+				<label for="activityName" id="ednewname">Enter new name: </label>
+				<input type="text" class="form-control ml-3" id="activityName" ng-model="activity.name" placeholder="Enter activity name" required>
+				
+			</div>
+			<button type="submit" class="btn btn-success ml-3" ng-disabled="editActivityForm.$invalid"><i class="fas fa-check-square"></i></button>
+	   </form>
+	   
+	   <a type="button" class="btn btn-outline-primary mt-3 " href="#!/activities/page/0" role="button">Back</a>
+		
+		
+	</div> <!-- container -->
+	
+</div><!-- controller -->

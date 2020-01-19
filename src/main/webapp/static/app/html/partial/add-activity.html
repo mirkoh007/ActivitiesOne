@@ -1,0 +1,21 @@
+<div ng-controller="addActivityCtrl">
+	<div class="container">
+	<h1>Ading of new Activity</h1><!--  
+	<p id="adfo1">Enter new Activity: <input type="text" ng-model = "activity.name"/> </p>
+
+	<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+		<button type = "button" class="btn btn-success" ng-click="add()"> <i class="fas fa-check"></i></button>
+		<a type="button" class="btn btn-outline-primary" href="#!/" role="button">Back</a>
+	</div>-->
+	<form class="form-inline" name="addActivityForm" ng-submit="add()">
+		<div class="form-group">
+			<label for="activityName">Enter activity name: </label>
+			<input type="text" class="form-control ml-3" id="activityName" ng-model="activity.name" placeholder="Enter activity name" required>
+			
+		</div>
+		<button type="submit" class="btn btn-success ml-3" ng-disabled="addActivityForm.$invalid"><i class="fas fa-check-square"></i></button>
+	</form>
+	
+	<a type="button" class="btn btn-outline-primary mt-3 " href="#!/" role="button">Back</a>
+	</div><!-- container -->
+</div>
