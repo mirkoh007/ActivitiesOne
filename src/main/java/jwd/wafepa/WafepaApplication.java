@@ -9,8 +9,8 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 public class WafepaApplication 
 	extends SpringBootServletInitializer {
 	
-//	@Autowired 
-//	private TestData td;
+	@Autowired 
+	private TestData td;
 
 	public static void main(String[] args) {
 		 SpringApplication.run(WafepaApplication.class, args);

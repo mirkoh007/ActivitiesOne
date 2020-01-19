@@ -7,47 +7,30 @@ import org.springframework.stereotype.Component;
 
 import jwd.wafepa.model.Activity;
 
-//import jwd.wafepa.service.ActivityService;
+import jwd.wafepa.service.ActivityService;
 
 
-//@Component
+@Component
 public class TestData {
+
+
+	@Autowired
+	private ActivityService activityService;
 //
-//	@Autowired
-//	private UserService userService;
-//	
-//	@Autowired
-//	private AddressService addressService;
-//	
-//	@Autowired
-//	private ActivityService activityService;
-//
-//	@PostConstruct
-//	public void init(){
-//	       for (int i = 1; i <= 10; i++) {
-//	            User user = new User();
-//	            user.setFirstName("First name " + i);
-//	            user.setLastName("Last name " + i);
-//	            user.setEmail("email" + i + "@example.com");
-//	            user.setPassword("123");
-//	            userService.save(user);
-//
-//	            for (int j = 1; j <= 3; j++) {
-//	                Address address = new Address();
-//	                address.setNumber(j + "c/7");
-//	                address.setStreat("Narodnog fronta");
-//
-//	                address.setUser(user);
-//	                user.addAddress(address);
-//	                addressService.save(address);
-//	            }
-//	       }
+	@PostConstruct
+	public void init(){
+//	      
 //	       
 //	    
-//		activityService.save(new Activity("Swimming"));
-//	   	activityService.save(new Activity("Running"));
-//	   	activityService.save(new Activity("Diving"));
-//	}
+		activityService.save(new Activity("Swimming"));
+	   	activityService.save(new Activity("Running"));
+	   	activityService.save(new Activity("Diving"));
+	   	activityService.save(new Activity("Skiing"));
+	   	activityService.save(new Activity("Jumping"));
+	   	activityService.save(new Activity("Biking"));
+	   	activityService.save(new Activity("Snowboarding"));
+	   	activityService.save(new Activity("Rolling"));
+	}
 	
 	
 }
