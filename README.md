@@ -5,4 +5,4 @@ Maven project coded in eclipse utilize spring framework, back end is Java, front
 Script for MySQL database is added. It will create schema. In application testdata class will populate
 data into schema.
 Edit application.properties file, enter credential that you use for your connection to database.
-You can run it on sever or as java application, it uses embedded tomcat server. Access it with: localhost:8080/
+You can run it on sever or as java application, it uses embedded tomcat server. Access it with: localhost:8080
