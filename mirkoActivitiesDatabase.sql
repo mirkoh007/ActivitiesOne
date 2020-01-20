@@ -1,0 +1,1 @@
+create database mirko_activities;
