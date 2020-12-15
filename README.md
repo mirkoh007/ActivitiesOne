@@ -1,6 +1,6 @@
 # ActivitiesOne
 
-This is a simple, responsive, web application that describes CRUD operations on entity.
+This is a simple web application that describes CRUD operations on entity.
 Maven project coded in eclipse utilize spring framework, back end is Java, front end is AngularJS, Bootstrap4.
 Script for MySQL database is added. It will create schema. In application testdata class will populate
 data into schema.

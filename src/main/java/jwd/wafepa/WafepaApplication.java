@@ -6,14 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class WafepaApplication 
-	extends SpringBootServletInitializer {
-	
-	@Autowired 
+public class WafepaApplication extends SpringBootServletInitializer {
+
+	@Autowired
 	private TestData td;
 
 	public static void main(String[] args) {
-		 SpringApplication.run(WafepaApplication.class, args);
+		SpringApplication.run(WafepaApplication.class, args);
 	}
 
 }

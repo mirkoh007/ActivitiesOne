@@ -12,20 +12,19 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name="tbl_activity")
+@Table(name = "tbl_activity")
 public class Activity {
-	
+
 	@Id
 	@GeneratedValue
-	@Column(name="id")
+	@Column(name = "id")
 	private Long id;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	private String name;
-	
-	@Column(name="admin_comment")
-	private String adminComment="test";
-	
+
+	@Column(name = "admin_comment")
+	private String adminComment = "test";
 
 	public Activity() {
 		super();
@@ -41,7 +40,7 @@ public class Activity {
 		this.id = id;
 		this.name = name;
 	}
-	
+
 	/**
 	 * 
 	 * @return Activity identifier.
@@ -49,15 +48,16 @@ public class Activity {
 	public Long getId() {
 		return id;
 	}
-	
+
 	/**
 	 * Sets activity identifier.
+	 * 
 	 * @param id new identifier
- 	 */
+	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	/**
 	 * 
 	 * @return Name of the activity.
@@ -65,7 +65,7 @@ public class Activity {
 	public String getName() {
 		return name;
 	}
-	
+
 	/**
 	 * 
 	 * @param name New name of the activity.
@@ -112,6 +112,5 @@ public class Activity {
 			return false;
 		return true;
 	}
-	
-	
+
 }

@@ -14,20 +14,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/")
 public class IndexController {
-	
+
 	@RequestMapping(method = RequestMethod.GET)
-	
-	public void getIndex(HttpServletRequest request, HttpServletResponse response){
+
+	public void getIndex(HttpServletRequest request, HttpServletResponse response) {
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/static/app/html/index.html");
-	
-		 
+
 		try {
 			requestDispatcher.forward(request, response);
 		} catch (ServletException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 	}
